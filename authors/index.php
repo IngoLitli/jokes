@@ -7,7 +7,6 @@
 <head>
     <title>Manage Authors</title>
     <link rel="stylesheet" type="text/css" href="../css/master.css">
-    <link rel="stylesheet" type="text/css" href="../css/author.css">
 </head>
 <body>
 <h1>Manage Authors</h1>
