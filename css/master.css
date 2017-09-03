@@ -1,33 +1,24 @@
-.container > *{
-    position: relative;
-    display: inline-block;
+table{
+    border: rgb(0,0,0) solid 2px;
+    border-collapse: collapse;
 }
 
-.container{
-    display: inline;
-    position: relative;
-    border: rgba(0,0,0,1) solid 1px;
-    padding: 1em;
-    margin-bottom: 2em;
-    background-color: rgb(255, 255, 255);
-    background-image: url("rainbow3.png");
-    background-attachment: scroll;
+td:nth-last-child(n+3) {
+    padding-right: 1em;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
 }
 
-h1{
-    text-align: center;
-    font-size: 3em;
+td{
+    border-top: rgb(0,0,0) solid 1px;
 }
 
-ul{
-    display: inline;
-    list-style: none;
+th{
+    padding: 0.5em;
 }
+
 body {
     background-image: url("rainbow2.png");
     font-size: 1em;
-}
-
-li {
-    margin: 0.5em;
 }
