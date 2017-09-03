@@ -1,9 +1,11 @@
 table{
     border: rgb(0,0,0) solid 2px;
     border-collapse: collapse;
+    margin: 0 auto;
 }
 
 td:nth-last-child(n+3) {
+    border-right: rgba(0,0,0,0.1) dashed 1px;
     padding-right: 1em;
     padding-left: 0.5em;
     padding-bottom: 0.5em;
@@ -15,10 +17,17 @@ td{
 }
 
 th{
+    border-right: rgba(0,0,0,0.1) dashed 1px;
     padding: 0.5em;
 }
 
 body {
-    background-image: url("rainbow2.png");
     font-size: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: rgb(245, 245, 245);
+}
+
+h1, h2, p, div{
+    text-align: center;
 }
