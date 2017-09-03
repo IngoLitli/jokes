@@ -13,15 +13,17 @@
 <p class="addNewButton"><a href="worker.php?add">Add new author</a></p>
 <table>
     <tr>
-        <td class="title">Name</td>
-        <td class="title">Email</td>
+        <th class="title">Name</th>
+        <th class="title">Email</th>
+        <th></th>
+        <th></th>
     </tr>
     <?php foreach ($authors as $author): ?>
         <form action="" method="post">
             <tr>
                 <td><?php echo html($author['name']); ?></td>
                 <td><?php echo html($author['email']); ?></td>
-                <td><input type="hidden" name="id" value="<?php echo $author['id']; ?>" id="name"></td>
+                <input type="hidden" name="id" value="<?php echo $author['id']; ?>" id="name">
                 <td><input type="submit" name="action" value="Edit" id="editButton" class="button"></td>
                 <td><input type="submit" name="action" value="Delete" id="deleteButton" class="button"></td>
             </tr>
