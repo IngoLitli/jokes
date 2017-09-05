@@ -1,0 +1,7 @@
+div#filter {
+    float: right;
+    margin: 0;
+}
+#filterLabel {
+    display: block;
+}
