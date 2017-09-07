@@ -13,6 +13,7 @@ if (isset($_GET['add'])){
 
 if (isset($_GET['addform'])){
     include_once $_SERVER['DOCUMENT_ROOT'] . '/nemendur/ingvaroli/jokes/db/joke/insertJoke.php';
+    #include_once $_SERVER['DOCUMENT_ROOT'] . '/nemendur/ingvaroli/jokes/db/joke/insertJokeCategory.php';
 
     header('Location: .');
     exit();
@@ -26,7 +27,10 @@ if (isset($_POST['action']) and  $_POST['action'] == 'Edit'){
     $text = $row['jokeText'];
     $date = $row['jokeDate'];
     $id = $row['id'];
+    $id_author = $row['id_author'];
+    $activeCategories = explode(",",$row['categories']);
     $button = 'Update joke';
+
 
     include 'form.php';
     exit();
@@ -47,9 +51,12 @@ if (isset($_POST['action']) and  $_POST['action'] == 'Delete') {
 include_once $_SERVER['DOCUMENT_ROOT'] . '/nemendur/ingvaroli/jokes/db/joke/getJoke.php';
 
 
-
 foreach ($result as $row){
-    $jokes[] = array('id' => $row['id'], 'text' => $row['jokeText'], 'date' => $row['jokeDate']);
+    $jokes[] = array('id' => $row['id'],
+        'text' => $row['jokeText'],
+        'date' => $row['jokeDate'],
+        'author' => $row['author'],
+        'category' => $row['categories']);
 }
 
 

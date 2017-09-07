@@ -12,10 +12,10 @@
 <form action="?<?php echo html($action);?>" method="post">
     <div>
         <label for="name">Name:
-            <input type="text" name="name" id="name" value="<?php echo html($name);?>" pattern="[A-Z][A-z|0-9| ]*" required>
+            <input type="text" name="name" id="name" value="<?php echo html($name);?>" pattern="[A-Z][A-z|0-9| ]*" placeholder="Example: John Doe" required>
         </label>
         <label for="email">Email:
-            <input type="email" name="email" id="email" value="<?php echo html($email);?>" pattern="[A-z|0-9]*[@][A-z|0-9]*[.][a-z]*" required>
+            <input type="email" name="email" id="email" value="<?php echo html($email);?>" pattern="[A-z|0-9]*[@][A-z|0-9]*[.][a-z]*" placeholder="Example: email@email.com" required>
         </label>
     </div>
     <div>
