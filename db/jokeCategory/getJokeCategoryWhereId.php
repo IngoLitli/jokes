@@ -2,9 +2,9 @@
     include $_SERVER['DOCUMENT_ROOT'] . '/nemendur/ingvaroli/jokes/db/dbConnect.php';
 
     try{
-        $sql = 'SELECT id, name FROM categories WHERE id = :id';
+        $sql = 'SELECT id_category FROM jokecategory WHERE id_joke = :id';
         $s = $pdo->prepare($sql);
-        $s->bindValue(':id', $_POST['id']);
+        $s->bindValue(':id', $id);
         $s->execute();
     }
     catch (PDOException $e){
@@ -13,5 +13,5 @@
         exit();
     }
 
-    $result = $s->fetch();
+    $result = $s->fetchALL();
 ?>

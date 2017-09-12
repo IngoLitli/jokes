@@ -24,6 +24,7 @@
             <th class="title">Author</th>
             <th class="title">Categories</th>
             <th class="title">Date Created</th>
+            <th class="title">Date Updated</th>
             <th>
                 <div id="filter">
                     <label id="filterLabel" for="filter">Filter</label>
@@ -38,8 +39,9 @@
                 <tr>
                     <td class="jokeText"><?php echo html($joke['text']);?></td>
                     <td><?php echo html($joke['author']); ?></td>
-                    <td><?php echo html($joke['category']); ?></td>
+                    <td class="jokeCategories"><?php echo html($joke['category']); ?></td>
                     <td class="jokeDate"><?php echo html($joke['date']); ?></td>
+                    <td class="jokeDate"><?php echo html($joke['updateDate']); ?></td>
                     <input type="hidden" name="id" value="<?php echo $joke['id']; ?>" id="name">
                     <td><input type="submit" name="action" value="Edit" id="editButton" class="button">
                         <input type="submit" name="action" value="Delete" id="deleteButton" class="button"></td>

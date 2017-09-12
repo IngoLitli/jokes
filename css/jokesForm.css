@@ -1,0 +1,17 @@
+legend {
+    border-collapse: collapse;
+}
+.categoryInput{
+    float: left;
+}
+.categoriesContainer{
+    max-width: 20em;
+    margin: 0 auto;
+}
+.categoriesContainer > div{
+    width: 100%;
+}
+
+.category {
+    display: inline-block;
+}

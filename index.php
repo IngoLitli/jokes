@@ -8,5 +8,6 @@
         <h2><a href="categories">Manage Categories</a></h2>
         <h2><a href="authors">Manage Authors</a></h2>
         <h2><a href="jokes">Manage Jokes</a></h2>
+        <h2><a href="search">Search Engine</a></h2>
     </body>
 </html>
